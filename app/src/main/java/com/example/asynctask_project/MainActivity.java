@@ -2,6 +2,7 @@ package com.example.asynctask_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -20,4 +21,8 @@ public class MainActivity extends AppCompatActivity {
         ImageView image = findViewById(R.id.imageview);
         ilt.execute(image);
     }
+
+    public void next (View v){
+        Intent intent = new Intent(this, NextActivity.class);
+        startActivity(intent);    }
 }
